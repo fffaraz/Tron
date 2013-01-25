@@ -114,7 +114,7 @@ void TronServer::TimerShot()
     if(!m_state) return;
     if(ans_1 || ans_2) Play();
     QByteArray bytdata((char*)(&m_map), sizeof(struct TronMap));
-    QHostAddress br = QHostAddress::Broadcast;
+    QHostAddress br = QHostAddress("192.168.0.255");
     if(!m_state) return;
     m_udp->writeDatagram(bytdata, br, 30000);
     qDebug() << "Sent" << bytdata.size() << br.toString();
@@ -133,32 +133,32 @@ void TronServer::Play()
     switch(last_move_1)
     {
     case 'u':
-        nh1.X = nh1.X -1;
+        nh1.Y = nh1.Y -1;
         break;
     case 'd':
-        nh1.X = nh1.X +1;
-        break;
-    case 'r':
         nh1.Y = nh1.Y +1;
         break;
+    case 'r':
+        nh1.X = nh1.X +1;
+        break;
     case 'l':
-        nh1.Y = nh1.Y -1;
+        nh1.X = nh1.X -1;
         break;
     }
 
     switch(last_move_2)
     {
     case 'u':
-        nh2.X = nh2.X -1;
+        nh2.Y = nh2.Y -1;
         break;
     case 'd':
-        nh2.X = nh2.X +1;
-        break;
-    case 'r':
         nh2.Y = nh2.Y +1;
         break;
+    case 'r':
+        nh2.X = nh2.X +1;
+        break;
     case 'l':
-        nh2.Y = nh2.Y -1;
+        nh2.X = nh2.X -1;
         break;
     }
 
@@ -246,7 +246,7 @@ void TronServer::UdpData()
         QHostAddress sender;
         quint16 senderPort;
         m_udp->readDatagram(datagram.data(), datagram.size(), &sender, &senderPort);
-        qDebug() << sender.toString() << datagram;
+        qDebug() << "Recv" << datagram.size() << sender.toString() << datagram;
         processTheDatagram(sender.toString(), datagram);
     }
 }

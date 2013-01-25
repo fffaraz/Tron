@@ -4,21 +4,22 @@ MapDrawer::MapDrawer(TronMap *map, QWidget *parent) :
     QWidget(parent)
 {
     this->map = map;
+    //setFixedSize(500,500);
 
     background = QBrush(QColor(255, 255, 255));
-    p1b=QBrush(QColor(255,0,0));
-    p2b=QBrush(QColor(0,0,255));
-    p1h=QBrush(QColor(100,0,0));
-    p2h=QBrush(QColor(0,0,100));
+    p1b=QBrush(QColor(255,150,150));
+    p2b=QBrush(QColor(150,150,255));
+    p1h=QBrush(QColor(255,0,0));
+    p2h=QBrush(QColor(0,0,255));
     empty=QBrush(QColor(255,255,255));
-    block=QBrush(QColor(100,100,100));
+    block=QBrush(QColor(0,0,0));
 
     p_p1b=QPen(QColor(255,0,0));
     p_p2b=QPen(QColor(0,0,255));
-    p_p1h=QPen(QColor(100,0,0));
-    p_p2h=QPen(QColor(0,0,100));
-    p_empty=QPen(QColor(0,0,0));
-    p_block=QPen(QColor(100,100,100));
+    p_p1h=QPen(QColor(255,0,0));
+    p_p2h=QPen(QColor(0,0,255));
+    p_empty=QPen(QColor(200,200,200));
+    p_block=QPen(QColor(0,0,0));
 
 }
 
