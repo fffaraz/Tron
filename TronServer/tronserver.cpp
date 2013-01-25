@@ -114,7 +114,7 @@ void TronServer::TimerShot()
     if(!m_state) return;
     if(ans_1 || ans_2) Play();
     QByteArray bytdata((char*)(&m_map), sizeof(struct TronMap));
-    QHostAddress br = QHostAddress("192.168.0.255");
+    QHostAddress br = QHostAddress::Broadcast;
     if(!m_state) return;
     m_udp->writeDatagram(bytdata, br, 30000);
     qDebug() << "Sent" << bytdata.size() << br.toString();
