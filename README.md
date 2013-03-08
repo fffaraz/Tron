@@ -1,7 +1,16 @@
 Tron
 ====
 
-Tron AI Challenge
+Tron AI Challenge:
+The objective is to create an AI to play the classic game Tron, Surround, Snafu, Snake, etc.
+You begin with a start location on an m by n grid and are asked to move in a corresponding direction (north, south, east, west).
+When players move their previous location remains as a “jet wall”.
+A player must try to avoid running into their opponents “jet wall”, their own “jet wall”, and outside the “game grid” in order to successfully beat their opposition.
+
+This challenge is pretty much the equivalent of two-player Snake.
+The aim is to create AI allowing your Tron bike to beat another, which is easier said than done!
+
+
 
 Tron Lightcycles:
 http://en.wikipedia.org/wiki/Tron_(franchise)#Light_cycles
