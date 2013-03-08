@@ -1,7 +1,6 @@
-Tron
+Tron AI Challenge
 ====
 
-Tron AI Challenge:
 The objective is to create an AI to play the classic game Tron, Surround, Snafu, Snake, etc.
 You begin with a start location on an m by n grid and are asked to move in a corresponding direction (north, south, east, west).
 When players move their previous location remains as a “jet wall”.
