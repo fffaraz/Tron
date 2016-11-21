@@ -16,10 +16,10 @@ The aim is to create AI allowing your Tron bike to beat another, which is easier
 
 ## SCREENSHOT:
 
-![ScreenShot1](http://frz.ir/dl/projects/tron/1.png)
-![ScreenShot2](http://frz.ir/dl/projects/tron/2.png)
-![ScreenShot3](http://frz.ir/dl/projects/tron/3.png)
-![ScreenShot4](http://frz.ir/dl/projects/tron/4.png)
+![ScreenShot1](https://raw.githubusercontent.com/fffaraz/Tron/master/screenshots/1.png)
+![ScreenShot2](https://raw.githubusercontent.com/fffaraz/Tron/master/screenshots/2.png)
+![ScreenShot3](https://raw.githubusercontent.com/fffaraz/Tron/master/screenshots/3.png)
+![ScreenShot4](https://raw.githubusercontent.com/fffaraz/Tron/master/screenshots/4.png)
 
 
 
